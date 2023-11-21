@@ -390,14 +390,14 @@ screen and (min-device-pixel-ration: 2) {
 .team-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 12px;
+    align-items: center;
     gap: 72px;
 }
 
 .team-list-item {
     background-color: #FFFFFF;
     flex-direction: row;
+    width: 264px;
     padding-bottom: 0px;
     flex-direction: column;
     justify-content: center;
@@ -528,7 +528,7 @@ screen and (min-device-pixel-ration: 2) {
 }
 
 .logo-text-footer {
-    margin: 0 16px 72px;
+    margin-bottom: 72px;
     text-align: center;
 }
 
@@ -556,7 +556,7 @@ screen and (min-device-pixel-ration: 2) {
 
 .footer-text {
     text-align: left;
-    min-width: 288px;
+    max-width: 264px;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -1195,12 +1195,16 @@ screen and (min-device-pixel-ration: 2) {
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 92px;
+        justify-content: center;
+        /* padding: 92px; */
         gap: 64px 24px;
     }
 
     .team-list-item {
-        width: calc((100% - 24px) / 2);
+        /* width: calc((100% - 24px) / 2); */
+       width: 264px;
+
+
     }
     /* ======= /TEAM TABLET STYLES ======== */
 
@@ -1287,6 +1291,7 @@ screen and (min-device-pixel-ration: 2) {
         .hero {
             padding-top: 188px;
             padding-bottom: 188px;
+            max-width: 1440px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/retina/desktop-bg.jpg);
         }
@@ -1331,7 +1336,7 @@ screen and (min-device-pixel-ration: 2) {
     }
 
     .benefits-list-text {
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .benefits-list-item {
@@ -1436,6 +1441,10 @@ screen and (min-device-pixel-ration: 2) {
     
     .social-media {
         margin-right: 80px;
+    }
+
+    .social-media-text {
+        text-align: left;
     }
     /* ======= /FOOTER DESKTOP STYLES ======== */
 
